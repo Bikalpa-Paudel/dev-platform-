@@ -11,26 +11,26 @@
     <div class="container">
         <form  class="login-form">
             <div class="profile-img"></div>
-            <label>  
-                First Name            
+            <div class="inputs">   
                 <input type="text" class="input first-name" name="first-name" required>       
-            </label>
-            <label>
-                Last Name
-                <input type="text" class="input last-name" required>
-            </label>
-            <label>
-                Email
-                <input type="email" class="input email" required>
-            </label>
-            <label>
-                Password
-                <input type="password" class="input password" required>
-            </label>
-            <label>
-                Re-type Password
-                <input type="password" class="input re-password" required>
-            </label>
+                <label for="first-name">First Name</label>           
+            </div>
+            <div class="inputs">
+                <input type="text" class="input last-name" name="last-name" required>
+                <label for="last-name">Last Name</label> 
+            </div>
+            <div class="inputs">
+                <input type="email" class="input email" name="email" required>
+                <label for="email">Email</label> 
+            </div>
+            <div class="inputs">
+                <input type="password" class="input password" name="password" required>
+                <label for="password">Password</label> 
+            </div>
+            <div class="inputs">
+                <input type="password" class="input re-password" name="re-password" required>
+                <label for="re-password">Re-type Password</label> 
+            </div>
             <button class="login-btn">Login</button>
         </form>
     </div>

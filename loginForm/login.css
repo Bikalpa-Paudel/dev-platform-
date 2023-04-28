@@ -35,22 +35,34 @@
     border-radius: 50%;    
 }
 
+
 /* ======= All Input Areas Design ======== */
-.input{
-    
+
+.inputs{
+    width: 100%;
+    position: relative;
+}
+.input{ 
     outline: none;
     border: none;
     border-bottom: 2px solid rgb(41, 67, 112);
     background-color: transparent;
     width: 100%;
-    color: rgb(41, 67, 112);;
-    font-size: 1rem;
+    color: rgb(41, 67, 112);
+    font-size: 1rem; 
 }
 
 
 label{
     color: rgb(180, 177, 177);
-    width: 90%;
+    position: absolute;   
+    left: 0;
+    z-index: -1;
+    transition: all .3s linear;
+}
+.input:focus ~ label,
+.input:valid ~ label{
+top: -20px;
 }
 
 /* ======= Button's Design And Simple hover effect ======== */
